@@ -2,6 +2,12 @@
 
 ## Installation
 
+### Dependencies
+
+  * XML::Writer
+  * Tie::File
+  * File::Find
+
 After installing [Mojo](https://github.com/kraih/mojo).
 
       $ git clone git://github.com/jpablobr/rddtfsq.git
