@@ -20,7 +20,7 @@ Load you data:
 
       $ ./data_dump.pl
 
-This might take a while depending on your data.
+This might take a while depending on your amount data.
 
 Go to [localhost:3000](http://localhost:3000) with your trusty brower, and be amazed! You’re done... SRSLY!
 
