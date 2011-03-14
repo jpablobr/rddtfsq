@@ -36,7 +36,7 @@ my (@file_meta_data,
 );
 
 # Paths
-$data_path = "../data";
+$data_path = "../cd_details";
 $solr_path = "./solr/example/exampledocs";
 
 find( sub {
@@ -115,5 +115,4 @@ sub creat_xml_file_element {
     $writer->endTag();
 }
 
-# Zero but true!
 exit(0);
