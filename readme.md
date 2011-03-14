@@ -1,7 +1,5 @@
 # Recursive directory data traverser for solr querying (rddtfsq)
 
-
-
 ## Dependencies
 
 Perl:

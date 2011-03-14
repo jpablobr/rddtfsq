@@ -50,7 +50,7 @@ __DATA__
 <!doctype html><html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
-	<title>A simple Solr directories data indexer</title>
+	<title>Recursive directory data traverser for solr querying (rddtfsq)</title>
 
 	<style type="text/css">/*<![CDATA[*/
 	body {

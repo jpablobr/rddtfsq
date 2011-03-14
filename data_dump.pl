@@ -104,10 +104,10 @@ sub creat_xml_file_element {
     $writer->characters("$size");
     $writer->endTag('field');
     $writer->startTag('field', 'name' => 'cat');
-    $writer->characters("$datestamp");
+    $writer->characters("$location");
     $writer->endTag('field');
-    $writer->startTag('field', 'name' => 'text');
-    $writer->characters("$path");
+    $writer->startTag('field', 'name' => 'features');
+    $writer->characters("$medium_details");
     $writer->endTag('field');
     $writer->startTag('field', 'name' => 'text');
     $writer->characters("$location");
