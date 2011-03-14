@@ -99,7 +99,7 @@ __DATA__
 @@ search_form.html.ep
 <form method="get" action="<%= url_for('search') %>">
 	<div>
-		<input type="text" name="q" value="readme"/>
+		<input type="text" name="q" value=""/>
 		<input type="submit" value="Search" />
 	</div>
 </form>

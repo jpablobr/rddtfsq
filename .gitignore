@@ -20,3 +20,4 @@ pkg
 
 ## PROJECT::SPECIFIC
 solr/example/solr/data/*
+solr/example/logs/*
