@@ -4,15 +4,15 @@
 
 After installing [Mojo](https://github.com/kraih/mojo).
 
-      git clone git://github.com/jpablobr/rddtfsq.git
+      $ git clone git://github.com/jpablobr/rddtfsq.git
 
-      cd rddtfsq
+      $ cd rddtfsq
 
-      ./servers_starter.pl
+      $ ./servers_starter.pl
 
 Load you data:
 
-     ./data_dump.pl
+      $ ./data_dump.pl
 
 This might take a while depending on your data.
 
