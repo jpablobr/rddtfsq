@@ -1,12 +1,20 @@
 # Recursive directory data traverser for solr querying (rddtfsq)
 
-## Installation
 
-### Dependencies
+
+## Dependencies
+
+Perl:
 
   * XML::Writer
   * Tie::File
   * File::Find
+
+Solr:
+
+You need to know about Solr, but if you don't [here is how to get started](http://lucene.apache.org/solr/tutorial.html).
+
+## Installation
 
 After installing [Mojo](https://github.com/kraih/mojo).
 

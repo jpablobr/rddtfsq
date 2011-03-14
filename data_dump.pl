@@ -89,8 +89,6 @@ while (($key, $value) = each(%files_parser_helper)) {
     $writer->endTag();
     $writer->end();
 
-    # So you can have an idea on what's going on!
-    print "Solr path: $solr_path/post.jar  xml file: $file_path_xml \n";
     system("java -jar $solr_path/post.jar $file_path_xml");
 }
 
