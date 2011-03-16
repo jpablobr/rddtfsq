@@ -36,7 +36,7 @@ my (@file_meta_data,
 );
 
 # Paths
-$data_path = "../cd_details";
+$data_path = "../data";
 $solr_path = "./solr/example/exampledocs";
 
 find( sub {
@@ -72,6 +72,9 @@ while (($key, $value) = each(%files_parser_helper)) {
     $i = 0;
     for (@file) { $file{$i} = $_; $i++; }
 
+    # Usefull in case we die later on when posting to Solr.
+    print("Current file being processed: $file_path_xml \n");
+
     while (($key, $value) = each(%file)) {
         if ( $key > $n ) {
             @file_meta_data = split(':', $value);
@@ -89,7 +92,18 @@ while (($key, $value) = each(%files_parser_helper)) {
     $writer->endTag();
     $writer->end();
 
-    system("java -jar $solr_path/post.jar $file_path_xml");
+    system("java -jar $solr_path/post.jar $file_path_xml") == 0
+        or die "Failed: $?";
+
+    # Solr actually dont need the original XML file.
+    system("rm $file_path_xml") == 0
+        or die "Failed: $?";
+
+    # If the data is too big it would be better to copy the original source and
+    # traverse the data deleting the files already processes because if it
+    # fails, this will proive like a "stop" and "resume" kind of functionality
+    # system("rm $file_path_xml $file_path") == 0
+    #     or die "Failed: $?";
 }
 
 sub creat_xml_file_element {

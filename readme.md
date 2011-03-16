@@ -12,6 +12,8 @@ Solr:
 
 You need to know about Solr, but if you don't [here is how to get started](http://lucene.apache.org/solr/tutorial.html).
 
+It is also vendored in the app (The Solr directory).
+
 ## Installation
 
 After installing [Mojo](https://github.com/kraih/mojo).
@@ -22,7 +24,7 @@ After installing [Mojo](https://github.com/kraih/mojo).
 
       $ ./servers_starter.pl
 
-Load you data:
+Then you need to define the path to your data in the `data_dump.pl` file using the `$data_path` variable. After that, you can index the data in Solr doing the following:
 
       $ ./data_dump.pl
 
@@ -32,6 +34,7 @@ Go to [localhost:3000](http://localhost:3000) with your trusty brower, and be am
 
 ## TODO:
 
+   * Single page view for single results.
    * Search should be more user friendly.
 
 ## Note on Patches/Pull Requests:
